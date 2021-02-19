@@ -8,6 +8,10 @@
           display: flex;
           flex-direction: column;
         }
+        @media (max-width: 480px){
+          display: flex;
+          flex-direction: column;
+      }
     }
      
     &__first-item{
@@ -17,6 +21,9 @@
         @media (min-width: 480px) and (max-width: 780px){
           width:100%;
         }
+        @media (max-width: 480px){
+          width:100%;
+      }
    
     }
   
@@ -27,6 +34,10 @@
           margin-top: 20px;
           width:100%;
         }
+        @media (max-width: 480px){
+          margin-top: 20px;
+          width:100%;
+      }
    
     }
     &__main-title{
@@ -38,6 +49,12 @@
           font-size: 35px;
           text-align: center;
         }
+
+        @media (max-width: 480px){
+          font-size: 15px;
+          text-align: center;
+      }
+   
     }
     &__main-title2{
         font-size: 50px;
@@ -55,6 +72,13 @@
           text-align: center;
           margin-top: 50px;
         }
+
+        @media (max-width: 480px){
+          width: 100%;
+          font-size: 15px;
+        text-align: center;
+          margin-top: 30px;
+      }
     }
     &__quote{
         width: 50px;
@@ -63,6 +87,11 @@
           width: 35px;
           margin-right: 0px;
         }
+
+        @media (max-width: 480px){
+          width: 10px;
+          margin-right: 0px;
+      }
     }
     
 
@@ -74,6 +103,9 @@
        @media (min-width: 480px) and (max-width: 780px){
         width: 450px;
       }
+      @media (max-width: 480px){
+        width: 150px;
+    }
         
     }
     &__lights{
@@ -83,6 +115,11 @@
           width: 410px;
           margin-top: 0;
         }
+
+        @media (max-width: 480px){
+          width: 150px;
+          margin-top: 0;
+      }
        
     }
 
@@ -96,6 +133,11 @@
         font-size: 20px;
         text-align: center;
       }
+
+      @media (max-width: 480px){
+        font-size: 10px;
+        text-align: center;
+    }
         
     }
 
@@ -114,6 +156,12 @@
         text-align: center;
         
       }
+
+      @media (max-width: 480px){
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+    }
     }
 
     &__contact-button{
@@ -129,6 +177,10 @@
           font-size: 20px;
           margin-left: 185px;
         }
+        @media (max-width: 480px){
+          font-size: 10px;
+          margin-left:125px;
+      }
         
 
         &:hover{
@@ -153,6 +205,11 @@
           margin-left:200px;
           
         }
+
+        @media (max-width: 480px){
+          font-size: 10px;
+          margin-left:125px;
+      }
         
 
         &:hover{
@@ -178,6 +235,10 @@
        @media (min-width: 480px) and (max-width: 780px){
         display: none;
       }
+
+      @media (max-width: 480px){
+        display: none;
+    }
        
     }
    

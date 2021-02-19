@@ -31,12 +31,19 @@
         font-weight: 700;
         font-size: 15px;
         text-transform: uppercase;
+        @media (max-width: 480px){
+            font-size: 7px;
+            
+        }
        
     }
     &__logo{
         width: 15px;
         margin-top: 15px;
-        
+        @media (max-width: 480px){
+            width: 7px;
+        margin-top: 5px;
+        }
     }
     &__main-title{
         position: absolute;
