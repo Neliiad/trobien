@@ -1,0 +1,277 @@
+.Project{
+
+    &__pictures{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 75px;
+
+        @media (min-width: 480px) and (max-width: 780px){
+          display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 75px;
+        }
+    }
+
+    &__infos{
+        
+       text-align: center;
+       margin-top: 150px;
+       line-height: 50px;
+      
+    }
+
+    &__main-title{
+        font-family: "Raleway";
+        color: #FF0068;
+        font-weight: 500;
+        font-size: 3rem;
+        @media (min-width: 480px) and (max-width: 780px){
+          font-size: 2rem;
+        }
+    }
+
+    &__second-title{
+        font-family: "Roboto";
+        font-size: 1.5rem;
+        font-weight: 500;
+        @media (min-width: 480px) and (max-width: 780px){
+          font-size: 1rem;
+        }
+    }
+
+    &__item1{
+        background: url("../images/astronaut-1390007_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 450px;
+        h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+        p{
+            color: white;
+            font-family: "Roboto";
+            font-size: 1rem;
+            margin-left: 25px;
+            margin-top: 350px;
+        }
+        @media (min-width: 480px) and (max-width: 780px){
+          height: 400px;
+          width: 200px;
+          h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        p{
+          color: white;
+          font-family: "Roboto";
+          font-size: 0.9rem;
+          margin-left: 25px;
+          margin-top: 120px;
+      }
+
+        }
+        
+    }
+
+    &__item2{
+        background-image: url("../images/technology-785742_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 450px;
+        h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+        p{
+            color: white;
+            font-family: "Roboto";
+            font-size: 1rem;
+            margin-left: 25px;
+            margin-top: 215px;
+        }
+
+        @media (min-width: 480px) and (max-width: 780px){
+          height: 400px;
+          width: 200px;
+          h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        p{
+          color: white;
+          font-family: "Roboto";
+          font-size: 0.9rem;
+          margin-left: 25px;
+          margin-top: 40px;
+      }
+    }
+  }
+    &__item3{
+        background-image: url("../images/woman-2435605_1920.jpg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 450px;
+        h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        p{
+            color: white;
+            font-family: "Roboto";
+            font-size: 1rem;
+            margin-left: 25px;
+            margin-top: 270px;
+        }
+
+        @media (min-width: 480px) and (max-width: 780px){
+          height: 400px;
+          width: 200px;
+          h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        p{
+          color: white;
+          font-family: "Roboto";
+          font-size: 0.9rem;
+          margin-left: 25px;
+          margin-top: 70px;
+      }
+    }
+
+
+
+}
+
+.Project .scroll-part{
+
+    .content__to-left,
+    .content__to-right,
+    .content__to-up,
+    .content__to-scale {
+      opacity: 0;
+    }
+
+    &.is-inviewport {
+      // opacity: 1;
+      .content__to-left {
+        animation: toLeft 0.5s ease-in-out forwards;
+        animation-delay: 0.3s;
+      }
+
+      .content__to-right {
+        animation: toRight 0.5s ease-in-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      .content__to-up {
+        animation: toUp 0.6s ease-in-out forwards;
+      }
+
+      .content__to-scale {
+        animation: toScale 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes toRight {
+        0% {
+          opacity: 0;
+          transform: translateX(-40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes toScale {
+        0% {
+          opacity: 0;
+          transform: scale(0.6);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+    }
+  }
+
+}

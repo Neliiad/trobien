@@ -1,0 +1,229 @@
+.Contact{
+
+    h1{
+        margin-top:120px;
+        color: #FF0068;
+        font-size: 1.5rem;
+        font-family: "Raleway";
+        font-weight: 500;
+        @media (min-width: 480px) and (max-width: 780px){
+          text-align: center;
+        }
+    }
+
+    &__main-title{
+        margin-left: 150px;
+        h1{
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: 480px) and (max-width: 780px){
+          margin-left: 0;
+          
+          h1{
+            font-size: 2.5rem;
+            
+        }
+
+        
+        }
+    }
+
+    &__grid{
+        margin-left: 150px;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        @media (min-width: 480px) and (max-width: 780px){
+          display: grid;
+          margin-top: 50px;
+          margin-left: 0px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+           
+      }
+    }
+    
+
+    &__infos{
+        img{
+            width: 3%;
+            margin-right: 10px;
+        }
+
+        font-family: "Roboto";
+        color: #FF0068;
+        letter-spacing: 3px;
+       
+        
+    }
+
+    &__fields{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        label{
+            color:#FF0068 ;
+            font-size: 1rem;
+            font-family: "Roboto";
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        input{
+            margin-right: 50px;
+            border: solid 1px #FF0068;
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            margin-bottom: 50px;
+            padding-right: 90px;
+            width: 200px;
+            padding-top: 15px;
+            outline-style: none;
+            font-size: 1rem;
+        }
+        @media (min-width: 480px) and (max-width: 780px){
+         
+          margin-top: 50px;
+          
+       
+           
+      }
+    
+    }
+
+    &__message{
+        color: #FF0068 ;
+        font-size: 1rem;
+        font-family: "Roboto";
+        font-weight: 500;
+        letter-spacing: 2px;
+
+        textarea{
+            border: solid 1px #FF0068;
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            padding-right: 90px;
+            width: 550px;
+            padding-top: 50px;
+            outline-style: none;
+            font-size: 1rem;
+            font-family: "Roboto";
+        }
+    }
+
+    &__formulaire{
+        input[type="submit"]{
+            border: none;
+            background-color: #FF0068;
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Roboto";
+            font-weight: 500;
+            margin-left: 500px;
+            margin-top: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover{
+                background-color: transparent;
+                border: solid 1px #FF0068;
+                color: #FF0068;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+            }
+            @media (min-width: 480px) and (max-width: 780px){
+         
+              margin-left: 250px;
+              
+           
+               
+          }
+        }
+    }
+
+}
+
+.Contact .scroll-part{
+
+    .content__to-left,
+    .content__to-right,
+    .content__to-up,
+    .content__to-scale {
+      opacity: 0;
+    }
+
+    &.is-inviewport {
+      // opacity: 1;
+      .content__to-left {
+        animation: toLeft 0.5s ease-in-out forwards;
+        animation-delay: 0.3s;
+      }
+
+      .content__to-right {
+        animation: toRight 0.5s ease-in-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      .content__to-up {
+        animation: toUp 0.6s ease-in-out forwards;
+      }
+
+      .content__to-scale {
+        animation: toScale 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes toRight {
+        0% {
+          opacity: 0;
+          transform: translateX(-40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes toScale {
+        0% {
+          opacity: 0;
+          transform: scale(0.6);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+    }
+  }

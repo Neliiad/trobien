@@ -1,0 +1,57 @@
+.Banner{
+     
+    &__hero{
+        width: 100%;
+
+        @media (min-width: 480px) and (max-width: 780px){
+            width: 100%;
+        }
+        @media (min-width: 240px) and (max-width: 320px){
+            width: 100%;
+        }
+    }
+
+    &__contain{
+        display: flex;
+     align-items:flex-end;
+     position: relative;
+    }
+    &__reseaux{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        
+    }
+    &__follow{
+        writing-mode:vertical-rl;
+        transform: rotate(180deg);
+        color: #FF0068;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+       
+    }
+    &__logo{
+        width: 15px;
+        margin-top: 15px;
+        
+    }
+    &__main-title{
+        position: absolute;
+        width: 500px;
+        font-size: 80px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        text-transform: uppercase;
+        bottom: 30%;
+        left:10%;
+
+        @media (min-width: 480px) and (max-width: 780px){
+            font-size: 40px;
+            width: 350px;
+        }
+       
+    }
+}

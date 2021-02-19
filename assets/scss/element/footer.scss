@@ -1,0 +1,127 @@
+.Footer{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-top: 150px;
+    background-color: #FF0068;
+    &__logo{
+        text-align: center;
+       
+    }
+
+    &__logo_short{
+      display: none;
+    }
+    p{
+        color: white;
+        font-family: "Roboto";
+        font-size: 25px;
+        margin-left: 150px;
+    }
+
+    img{
+        width: 25%;
+    }
+
+    @media (min-width: 480px) and (max-width: 780px){
+
+      &__logo{
+        text-align: center;
+       
+    }
+      &__logo_big{
+        display: none;
+      } 
+
+      &__logo_short{
+        display: block;
+      } 
+      img{
+        width: 15%;
+    }
+
+    p{
+      color: white;
+      font-family: "Roboto";
+      font-size: 25px;
+      margin-left: 0px;
+      
+  }
+  }
+}
+
+.Footer .scroll-part{
+
+    .content__to-left,
+    .content__to-right,
+    .content__to-up,
+    .content__to-scale {
+      opacity: 0;
+    }
+
+    &.is-inviewport {
+      // opacity: 1;
+      .content__to-left {
+        animation: toLeft 0.5s ease-in-out forwards;
+        animation-delay: 0.3s;
+      }
+
+      .content__to-right {
+        animation: toRight 0.5s ease-in-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      .content__to-up {
+        animation: toUp 0.6s ease-in-out forwards;
+      }
+
+      .content__to-scale {
+        animation: toScale 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes toRight {
+        0% {
+          opacity: 0;
+          transform: translateX(-40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes toUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes toScale {
+        0% {
+          opacity: 0;
+          transform: scale(0.6);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      
+    }
+  }

@@ -1,0 +1,66 @@
+*{
+    margin: 0 auto;
+}
+/**********************container********************/
+.container{
+    max-width: 1500px;
+}
+
+/**********************ATOMIC CSS*******************/
+.mt{
+    margin-top: 20px;
+}
+
+/*************************HEADER*******************/
+.Header{
+    width: 9%;
+}
+
+/***********************BANNER*********************/
+
+.Banner__hero{
+   
+    width: 100%;
+    
+}
+
+.Banner__contain{
+    display: flex;
+     align-items:flex-end;
+     position: relative;
+}
+
+.Banner__reseaux{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.Banner__follow{
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    color: #FF0068;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+   
+}
+.Banner__logo{
+    width: 15px;
+    margin-top: 15px;
+    
+}
+
+.Banner__main-title{
+    position: absolute;
+    width: 500px;
+    font-size: 80px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+    bottom: 30%;
+    left:10%;
+}
