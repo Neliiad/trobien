@@ -47,8 +47,32 @@
       
   }
   }
-}
 
+  @media (max-width: 480px){
+    &__logo{
+      text-align: center;
+     
+  }
+    &__logo_big{
+      display: none;
+    } 
+
+    &__logo_short{
+      display: block;
+    } 
+    img{
+      width: 15%;
+  }
+
+  p{
+    color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left: 0px;
+    
+}
+}
+}
 .Footer .scroll-part{
 
     .content__to-left,
