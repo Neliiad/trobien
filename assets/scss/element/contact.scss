@@ -33,7 +33,7 @@
         }
 
         @media (max-width: 480px){
-          text-align: center;
+          margin-left: 0;
 
           h1{
             font-size: 1.5rem;
@@ -124,7 +124,7 @@
           border-left:none;
           border-right:none;
           margin-bottom: 50px;
-          padding-right: 50px;
+          padding-right: 0px;
           width: 100px;
           padding-top: 15px;
           outline-style: none;
@@ -201,9 +201,9 @@
           }
 
           @media (max-width: 480px){
-            textarea{
+            
               margin-left: 25%;
-          }
+         
         }
     }
 
