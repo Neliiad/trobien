@@ -21,7 +21,9 @@
         flex-direction: column;
         margin-right: 20px;
         margin-bottom: 20px;
-        
+        @media (max-width: 480px){
+            margin-right: 5px;
+        }
     }
     &__follow{
         writing-mode:vertical-rl;
