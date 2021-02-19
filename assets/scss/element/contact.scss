@@ -80,7 +80,7 @@
         letter-spacing: 3px;
 
         @media (max-width: 480px){
-         font-size: 1rem;
+         font-size: 0.8rem;
       }
         
     }
@@ -120,7 +120,9 @@
       }
 
       @media (max-width: 480px){
-
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
         margin-top: 25px;
 
 
