@@ -78,7 +78,10 @@
         font-family: "Roboto";
         color: #FF0068;
         letter-spacing: 3px;
-       
+
+        @media (max-width: 480px){
+         font-size: 1rem;
+      }
         
     }
 
@@ -136,7 +139,7 @@
           border-right:none;
           margin-bottom: 50px;
           padding-right: 0px;
-          width: 100px;
+          width: 200px;
           padding-top: 15px;
           outline-style: none;
           font-size: 1rem;
@@ -171,7 +174,7 @@
             border-top:none;
             border-left:none;
             border-right:none;
-            padding-right: 30px;
+            padding-right: 0px;
             width: 200px;
             padding-top: 50px;
             outline-style: none;
@@ -213,7 +216,7 @@
 
           @media (max-width: 480px){
             font-size: 1rem;
-              margin-left: 20%;
+              margin-left: 15%;
               padding-left: 20px;
               padding-right: 20px;
               padding-top: 5px;
