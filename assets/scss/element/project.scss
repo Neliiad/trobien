@@ -12,6 +12,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 75px;
         }
+
+        @media (max-width: 480px){
+          display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr ;
+        margin-top: 75px;
+      }
     }
 
     &__infos{
@@ -19,7 +26,9 @@
        text-align: center;
        margin-top: 150px;
        line-height: 50px;
-      
+       @media (max-width: 480px){
+        line-height: none;
+    }
     }
 
     &__main-title{
@@ -30,6 +39,10 @@
         @media (min-width: 480px) and (max-width: 780px){
           font-size: 2rem;
         }
+
+        @media (max-width: 480px){
+          font-size: 1rem;
+      }
     }
 
     &__second-title{
@@ -39,6 +52,10 @@
         @media (min-width: 480px) and (max-width: 780px){
           font-size: 1rem;
         }
+
+        @media (max-width: 480px){
+          font-size:0.5rem;
+      }
     }
 
     &__item1{
@@ -89,6 +106,31 @@
       }
 
         }
+
+        @media (max-width: 480px){
+          height: 200px;
+          width: 100px;
+
+          h1{
+            color: white;
+            font-family: "Raleway";
+            text-transform: uppercase;
+            font-weight: 200;
+            text-align: center;
+            writing-mode:vertical-rl;
+            transform: rotate(180deg);
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        p{
+          color: white;
+          font-family: "Roboto";
+          font-size: 0.5rem;
+          margin-left: 25px;
+          margin-top: 0;
+      }
+      }
         
     }
 
@@ -141,7 +183,32 @@
           margin-top: 40px;
       }
     }
+  
+    @media (max-width: 480px){
+      height: 200px;
+      width: 100px;
+
+      h1{
+        color: white;
+        font-family: "Raleway";
+        text-transform: uppercase;
+        font-weight: 200;
+        text-align: center;
+        writing-mode:vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    p{
+      color: white;
+      font-family: "Roboto";
+      font-size: 0.5rem;
+      margin-left: 25px;
+      margin-top: 0;
   }
+  }
+}
     &__item3{
         background-image: url("../images/woman-2435605_1920.jpg");
         background-position: left;
@@ -193,9 +260,35 @@
       }
     }
 
+    @media (max-width: 480px){
+      height: 200px;
+      width: 100px;
+
+      h1{
+        color: white;
+        font-family: "Raleway";
+        text-transform: uppercase;
+        font-weight: 200;
+        text-align: center;
+        writing-mode:vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    p{
+      color: white;
+      font-family: "Roboto";
+      font-size: 0.5rem;
+      margin-left: 25px;
+      margin-top: 0;
+  }
+
 
 
 }
+
+    }
 
 .Project .scroll-part{
 
