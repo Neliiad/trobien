@@ -3,10 +3,10 @@
     &__hero{
         width: 100%;
 
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
             width: 100%;
         }
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
             width: 90%;
         }
     }
@@ -21,7 +21,7 @@
         flex-direction: column;
         margin-right: 20px;
         margin-bottom: 20px;
-        @media (max-width: 480px){
+        @media only screen and (max-width: 480px){
             margin-right: 5px;
         }
     }
@@ -33,7 +33,7 @@
         font-weight: 700;
         font-size: 15px;
         text-transform: uppercase;
-        @media (max-width: 480px){
+        @media only screen and (max-width: 480px){
             font-size: 7px;
             
         }
@@ -42,7 +42,7 @@
     &__logo{
         width: 15px;
         margin-top: 15px;
-        @media (max-width: 480px){
+        @media only screen and (max-width: 480px){
             width: 7px;
         margin-top: 5px;
         }
@@ -57,12 +57,12 @@
         bottom: 30%;
         left:10%;
 
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
             font-size: 40px;
             width: 350px;
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
             font-size: 15px;
             width: 150px;
         }

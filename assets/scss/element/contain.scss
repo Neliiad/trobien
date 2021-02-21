@@ -4,11 +4,11 @@
     &__flex{
         display: flex;
 
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           display: flex;
           flex-direction: column;
         }
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           display: flex;
           flex-direction: column;
       }
@@ -18,10 +18,10 @@
         width:50%;
         margin-top: 150px;
         display: flex;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           width:100%;
         }
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           width:100%;
           margin-top: 50px;
       }
@@ -31,11 +31,11 @@
     &__four-item{
         width:50%;
         margin-top: 300px;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           margin-top: 20px;
           width:100%;
         }
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           margin-top: 20px;
           width:100%;
       }
@@ -46,12 +46,12 @@
         color:#FF0068;
         font-family: "Raleway";
         font-weight: 300;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           font-size: 35px;
           text-align: center;
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           font-size: 25px;
           text-align: center;
       }
@@ -65,7 +65,7 @@
         text-align: right;
         width: 85%;
 
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           width: 100%;
           font-size: 35px;
           
@@ -74,7 +74,7 @@
           margin-top: 50px;
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           width: 100%;
           font-size: 25px;
         text-align: center;
@@ -84,12 +84,12 @@
     &__quote{
         width: 50px;
         margin-right: 20px;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           width: 35px;
           margin-right: 0px;
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           width: 20px;
           margin-right: 0px;
       }
@@ -101,10 +101,10 @@
         margin-top: 40px;
 
         
-       @media screen and (min-width: 480px) and (max-width: 780px){
+       @media only screen and (min-width: 480px) and (max-width: 780px){
         width: 450px;
       }
-      @media screen and (max-width: 480px){
+      @media only screen and (max-width: 480px){
         width: 250px;
     }
         
@@ -112,12 +112,12 @@
     &__lights{
         width: 600px;
         margin-top:300px;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           width: 410px;
           margin-top: 0;
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           width: 225px;
           margin-top: 0;
       }
@@ -130,12 +130,12 @@
         margin-top: 25px;
        margin-bottom: 40px;
 
-       @media screen and (min-width: 480px) and (max-width: 780px){
+       @media only screen and (min-width: 480px) and (max-width: 780px){
         font-size: 20px;
         text-align: center;
       }
 
-      @media screen and (max-width: 480px){
+      @media only screen and (max-width: 480px){
         font-size: 15px;
         text-align: center;
     }
@@ -151,14 +151,14 @@
        width: 85%;
 
        
-       @media screen and (min-width: 480px) and (max-width: 780px){
+       @media only screen and (min-width: 480px) and (max-width: 780px){
         font-size: 20px;
         width: 100%;
         text-align: center;
         
       }
 
-      @media screen and (max-width: 480px){
+      @media only screen and (max-width: 480px){
         font-size: 15px;
         text-align: center;
         width: 100%;
@@ -174,11 +174,11 @@
         margin-top: 50px;
         padding: 10px 20px 10px 20px;
 
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           font-size: 20px;
           margin-left: 185px;
         }
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           font-size: 15px;
           margin-left:25%;
           padding: 5px 10px 5px 10px;
@@ -202,13 +202,13 @@
         margin-top: 50px;
         padding: 10px 20px 10px 20px;
         margin-left:400px;
-        @media screen and (min-width: 480px) and (max-width: 780px){
+        @media only screen and (min-width: 480px) and (max-width: 780px){
           font-size: 20px;
           margin-left:200px;
           
         }
 
-        @media screen and (max-width: 480px){
+        @media only screen and (max-width: 480px){
           font-size: 15px;
           margin-left:25%;
           padding: 5px 10px 5px 10px;
@@ -235,11 +235,11 @@
         transform: rotate(-35deg);
 
         
-       @media screen and (min-width: 480px) and (max-width: 780px){
+       @media only screen and (min-width: 480px) and (max-width: 780px){
         display: none;
       }
 
-      @media screen and (max-width: 480px){
+      @media only screen and (max-width: 480px){
         display: none;
     }
        

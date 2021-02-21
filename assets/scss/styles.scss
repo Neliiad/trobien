@@ -13,10 +13,10 @@
 /**********************container********************/
 .container{
     max-width: 1500px;
-    @media screen and (min-width: 480px) and (max-width: 780px){
+    @media only screen and (min-width: 480px) and (max-width: 780px){
         max-width: 650px;
 }
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 480px){
     max-width: 350px;
 }
 
